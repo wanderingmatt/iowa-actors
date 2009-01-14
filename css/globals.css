@@ -50,6 +50,10 @@ a, strong, b { /* Straightens out OS X font rendering */
 * html .container_16{height:1%}
 .container_16{display:block}
 
+.right {
+  float: right;
+}
+
 /* =BANNER */
 
 #banner {
@@ -151,6 +155,13 @@ h1 {
 h1 strong {
   font-weight: bold;
   color: #fff;
+}
+
+h1 em {
+  display: block;
+  font-weight: bold;
+  font-style: normal;
+  color: #fae443;
 }
 
 h2 {
