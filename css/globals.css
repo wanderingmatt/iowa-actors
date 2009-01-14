@@ -143,12 +143,12 @@ a, strong, b { /* Straightens out OS X font rendering */
 
 /* =HEADINGS */
 
-h1, h2, h4, h5 {
+h1, h2 {
   letter-spacing: -0.05em;
 }
 
 h1 {
-  font: 200 2.85em/40px 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font: 300 2.85em/40px 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   color: #444858;
 }
 
@@ -165,7 +165,17 @@ h1 em {
 }
 
 h2 {
+  margin-top: 40px;
+  line-height: 40px;
+  font-size: 1.6em;
   font-weight: normal;
+  color: #fff;
+}
+
+.actor h2 {
+  margin: 0;
+  line-height: 20px;
+  font-size: 1em;
 }
 
 /*h2 {
