@@ -1,0 +1,266 @@
+/* 
+FILENAME: globals.css
+DESCRIPTION: This stylesheet serves global declarations to all University of Iowa assets
+AUTHOR: Matthew Anderson -> matthew.anderson.design@gmail.com
+LAST MODIFIED DATE: 01.13.2009
+*/
+
+/* =GRID OVERRIDE */
+/*  Grid is inactive when entire section is commented */
+/*
+body {
+  background: #fff url("../images/16_col.png") center top repeat-y !important;
+}
+
+#wrapper, #banner, #content, #container, #bg_footer {
+  background: none !important;
+}
+*/
+/* =BASE */
+
+body {
+  background: #0a0a0a;
+  font: normal 16px/20px 'Helvetica Neue', Helvetica, Arial, sans-serif; /* normalize font size across browsers */
+	color: #fff;
+}
+
+a:link, a:visited {
+	font-weight: normal;
+	text-decoration: none;
+	color: #fae443;
+}
+	
+a:hover, a:active {
+  background-color: #fae443;
+  color: #555a6e;
+}
+
+a, strong, b { /* Straightens out OS X font rendering */
+  line-height: 19px;
+}
+
+.hidden {
+	display: none;
+}
+
+/* =GRID =MODIFIERS */
+
+.container_16:after{clear:both;content:'.';display:block;visibility:hidden;height:0}
+.container_16{display:inline-block}
+* html .container_16{height:1%}
+.container_16{display:block}
+
+/* =BANNER */
+
+#banner {
+  background: #333642 url("../images/bg_banner.png") top center no-repeat;
+  height: 80px;
+  margin: 40px 0;
+}
+
+#logo {
+  position: relative;
+  width: 960px;
+  margin: 0 auto;
+}
+
+#logo a, #logo span {
+  position: absolute;
+  top: 20px;
+  left: 355px;
+  display: block;
+  background: transparent url("../images/logo-rev.png") no-repeat; 
+  width: 250px;
+  height: 40px;
+}
+
+#logo a:hover {
+  background-image: url("../images/logo-hover.png"); 
+}
+
+#logo a img {
+    display: block;
+    width: 0;
+}
+
+
+/*#logo a {
+  position: absolute;
+  top: 20px;
+  left: 355px;
+}*/
+
+#navigation ul li {
+  position: absolute;
+  top: 20px;
+}
+
+#navigation ul li#home {
+  left: 430px;
+}
+
+#navigation ul li#previous {
+  left: 10px;
+}
+
+#navigation ul li#next {
+  right: 10px;
+}
+
+#navigation ul li .button {
+  width: 140px;
+}
+
+#navigation ul li#home .button {
+  width: 80px;
+}
+
+/* =LAYOUT */
+
+.stage_right {
+  text-align: right;
+}
+
+.stage_left {
+  float: right;
+}
+
+.stage_right .buttons a.button, .stage_right .buttons button {
+  float: right;
+}
+
+/* =FOOTER */
+
+#footer {
+  background-color: #000;
+  margin-top: 40px;
+  padding: 20px;
+}
+
+/* =HEADINGS */
+
+h1, h2, h4, h5 {
+  letter-spacing: -0.05em;
+}
+
+h1 {
+  font: 200 2.85em/40px 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  color: #444858;
+}
+
+h1 strong {
+  font-weight: bold;
+  color: #fff;
+}
+
+h2 {
+  font-weight: normal;
+}
+
+/*h2 {
+  font-size: 1em;
+}
+
+h2 {
+  color: #fae443;
+}*/
+
+/* =CONTENT */
+
+#content p, #content ul, #content ol {
+  font-size: .875em;
+}
+
+/* =ACTORS */
+
+.actor h1 {
+  margin: 20px 0;
+}
+
+.actor .vcard .supporting,
+.actor .vcard .buttons {
+  margin-top: 40px;
+}
+
+/* =BUTTONS =BASE */
+/* Abstracted from the Wufoo implementation - thanks guys! */
+/* http://particletree.com/features/rediscovering-the-button-element/ */
+
+.buttons {
+	overflow: hidden; /* Float clearing for good browsers */
+	margin-bottom: 20px;
+	font-size: .85em;
+}
+
+.buttons a.button, .buttons button {
+  display: block;
+  float: left;
+  background: #22242c url("../images/bg_button_banner.png") bottom center repeat-x;
+  border: 1px solid #4c5163;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 100%;
+  font-weight: normal;
+  text-decoration: none;
+  color: #fff;
+  cursor: pointer;
+  padding: 9px; /* Links */
+  white-space: nowrap;
+  text-align: center;
+}
+
+.buttons button {
+  width: auto;
+  overflow: visible;
+  padding: 4px 10px 3px 7px; /* IE6 */
+}
+
+.buttons button[type] {
+  padding: 5px 10px 5px 7px; /* Firefox */
+  line-height: 18px; /* Safari */
+}
+
+*:first-child+html button[type] {
+  padding: 4px 10px 3px 7px; /* IE7 */
+}
+
+.buttons button img, .buttons a img {
+  margin: 0 3px -3px 0 !important;
+  padding: 0;
+  border: none;
+  width: 16px;
+  height: 16px;
+}
+
+/* =BUTTONS =TWEAKS */
+
+.buttons a.button, .buttons button { /* Safari */
+  -webkit-border-radius: 20px;
+}
+
+.buttons a.button, .buttons button, x:-moz-any-link, x:default {
+  -moz-border-radius: 20px;
+}
+
+/* =BUTTONS =STANDARD */
+
+.buttons button:hover, .buttons a.button:hover, .buttons a.button:active {
+  background: #111216;
+  border: 1px solid #444858;
+  color: #fff;
+}
+
+/* =BUTTONS =RESUME */
+
+button.resume, .buttons a.resume {
+  background: transparent;
+  width: 140px;
+  padding: 8px;
+  border: 2px solid #fae443;
+  color: #555a6e;
+}
+
+.buttons a.resume:hover, button.resume:hover, .buttons a.resume:active {
+  background: #fae443;
+  border: 2px solid #fae443;
+  color: #565b6e;
+}
