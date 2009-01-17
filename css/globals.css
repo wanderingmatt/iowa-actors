@@ -86,7 +86,7 @@ li.alpha {
   background-image: url("../images/logo-hover.png"); 
 }
 
-#logo a img {
+#logo img {
     display: block;
     width: 0;
 }
@@ -193,7 +193,7 @@ hr {
 }
 
 #actors ul {
-  margin: 0 10px;
+  margin: 0 10px 60px 10px;
 }
 
 #actors ul li {
@@ -282,18 +282,22 @@ hr {
   background-image: url("../images/david-tull-thumbnail.jpg");
 }
 
-#actors ul li a:hover,
-#actors ul li#download a:hover {
-  background: #555a6e;
-  color: #fff;
-}
-
 #actors ul li a:hover {
   background-position: 0 -200px;
   text-indent: 0;
 }
 
+#actors ul li#download a:hover {
+  background: #555a6e url("../images/icons/download.png") 50% 140px no-repeat;
+  color: #fff;
+}
+
 /* =ACTORS */
+
+.actor .headshot img {
+  display: block;
+  margin-bottom: 60px;
+}
 
 .actor h1 {
   margin: 20px 0;
