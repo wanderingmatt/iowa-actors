@@ -299,8 +299,31 @@ hr {
   margin-bottom: 60px;
 }
 
+.actor .catch {
+  clear:;
+  position: relative;
+}
+
 .actor h1 {
   margin: 20px 0;
+}
+
+.actor .affiliation {
+  position: absolute;
+  bottom: 0;
+  font-size: .875em;
+  font-style: normal;
+  text-transform: uppercase;
+  white-space: nowrap;
+  color: #30323a;
+}
+
+.actor .stage_left .affiliation {
+  left: 0;
+}
+
+.actor .stage_right .affiliation {
+  right: 0;
 }
 
 .actor .vcard .supporting,
