@@ -185,11 +185,16 @@ hr {
 
 /* =HOME */
 
-.lead {
+.section {
+  display: block;
   font-size: .875em;
   font-style: normal;
   text-transform: uppercase;
   color: #30323a;
+}
+
+.performances .section {
+  text-align: right;
 }
 
 #actors ul {
