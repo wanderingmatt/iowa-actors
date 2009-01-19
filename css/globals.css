@@ -207,8 +207,24 @@ hr {
   color: #30323a;
 }
 
-.performances .section {
+.performance {
+/*  padding: 0 35px;
+*/  font-size: .75em;
   text-align: right;
+  color: #30323a;
+}
+
+.performance .section {
+  font-size: 1.075em;
+}
+
+.performance strong {
+  color: #444858;
+}
+
+.performance em {
+  font-style: normal;
+  color: #fae443;
 }
 
 #actors ul {
