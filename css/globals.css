@@ -2,7 +2,7 @@
 FILENAME: globals.css
 DESCRIPTION: This stylesheet serves global declarations to all University of Iowa assets
 AUTHOR: Matthew Anderson -> matthew.anderson.design@gmail.com
-LAST MODIFIED DATE: 01.13.2009
+LAST MODIFIED DATE: 01.18.2009
 */
 
 /* =GRID OVERRIDE */
@@ -21,6 +21,7 @@ body {
 body {
   background: #0a0a0a;
   font: normal 16px/20px 'Helvetica Neue', Helvetica, Arial, sans-serif; /* normalize font size across browsers */
+  text-align: left;
 	color: #fff;
 }
 
@@ -45,6 +46,10 @@ a, strong, b { /* Straightens out OS X font rendering */
 
 /* =GRID =MODIFIERS */
 
+/*.container_16 {
+  overflow: hidden;
+}*/
+
 .container_16:after{clear:both;content:'.';display:block;visibility:hidden;height:0}
 .container_16{display:inline-block}
 * html .container_16{height:1%}
@@ -61,6 +66,7 @@ li.alpha {
 /* =BANNER */
 
 #banner {
+  clear: both;
   background: #16171c url("../images/bg_banner.png") top center no-repeat;
   height: 80px;
   margin: 40px 0;
@@ -116,6 +122,12 @@ li.alpha {
   width: 80px;
 }
 
+/* =CONTENT */
+
+#content {
+  clear: both;
+}
+
 /* =FOOTER */
 
 #footer {
@@ -163,6 +175,7 @@ h2 {
 
 h3 {
   margin-bottom: 20px;
+  line-height: 20px;
   font-size: .875em;
   font-weight: normal;
   text-align: center;
@@ -175,6 +188,7 @@ hr {
   clear: both;
   height: 1px;
   margin: 0 10px 19px 10px;
+  padding: 0;
   border: 0;
   border-top: 1px solid #1f2024;
 }
@@ -209,7 +223,7 @@ hr {
 
 #actors ul li a {
   display: block;
-  background-position: 0 0;
+  background-position: 0px 0px;
   background-repeat; no-repeat
   width: 235px;
   padding: 80px 0;
@@ -352,7 +366,7 @@ hr {
 
 #dome img {
   display: block;
-  margin: 0 auto;
+  margin: 0 auto 20px auto;
 }
 
 /* =BUTTONS =BASE */

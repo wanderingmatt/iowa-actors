@@ -1,10 +1,33 @@
 /* 
 FILENAME: globals.css
-DESCRIPTION: This stylesheet serves global declarations to all MattLovesLinz.com assets
-AUTHOR: Matthew Anderson -> manderson@onehub.com
-LAST MODIFIED DATE: 11.02.2008
+DESCRIPTION: This stylesheet serves global declarations to all iowaactors.com assets
+AUTHOR: Matthew Anderson -> matthew.anderson.design@gmail.com
+LAST MODIFIED DATE: 01.18.2009
 */
 
 /* Hides from IE-Mac \*/
+
+img, #logo span, #logo a { behavior: url(iepngfix.htc) }
+
+body, #dome img {
+  text-align: center;
+}
+
+#content {
+  text-align: left;
+}
+ 
+h1 {
+  font-size: 38px;
+  letter-spacing: -3px;
+}
+
+#actors ul li a {
+  zoom: 1;
+}
+
+.actor .affiliation {
+  bottom: -5px;
+}
 
 /* End hide from IE-Mac */
