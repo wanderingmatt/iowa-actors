@@ -301,7 +301,7 @@ hr {
 
 .actor .headshot img {
   display: block;
-  margin-bottom: 60px;
+  margin-bottom: 40px;
 }
 
 .actor .catch {
@@ -346,6 +346,13 @@ hr {
 
 .stage_right .buttons a.button, .stage_right .buttons button {
   float: right;
+}
+
+/* =DOME */
+
+#dome img {
+  display: block;
+  margin: 0 auto;
 }
 
 /* =BUTTONS =BASE */
