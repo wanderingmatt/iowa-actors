@@ -12,7 +12,7 @@ body {
   background: #fff url("../images/16_col.png") center top repeat-y !important;
 }
 
-#wrapper, #banner, #content, #container, #bg_footer {
+#wrapper, #banner, #content, #container {
   background: none !important;
 }
 */
@@ -45,10 +45,6 @@ a, strong, b { /* Straightens out OS X font rendering */
 }
 
 /* =GRID =MODIFIERS */
-
-/*.container_16 {
-  overflow: hidden;
-}*/
 
 .container_16:after{clear:both;content:'.';display:block;visibility:hidden;height:0}
 .container_16{display:inline-block}
@@ -128,14 +124,6 @@ li.alpha {
   clear: both;
 }
 
-/* =FOOTER */
-
-#footer {
-  background-color: #000;
-  margin-top: 40px;
-  padding: 20px;
-}
-
 /* =HEADINGS */
 
 h1, h2 {
@@ -162,7 +150,7 @@ h1 em {
 h2 {
   margin: 20px 0 40px 0;
   line-height: 20px;
-  font-size: 1.125em;
+  font-size: 1em;
   font-weight: normal;
   color: #fff;
 }
@@ -208,22 +196,24 @@ hr {
 }
 
 .performance {
-/*  padding: 0 35px;
-*/  font-size: .75em;
+  padding-top: 0px;
+  font-size: .75em;
   text-align: right;
   color: #30323a;
 }
 
 .performance .section {
+  margin-bottom: 3px;
   font-size: 1.075em;
+  color: #30323a;
+  
 }
 
 .performance strong {
   color: #444858;
 }
 
-.performance em {
-  font-style: normal;
+.performance strong.date {
   color: #fae443;
 }
 
