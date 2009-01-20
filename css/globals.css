@@ -199,18 +199,17 @@ hr {
   padding-top: 0px;
   font-size: .75em;
   text-align: right;
-  color: #30323a;
+  color: #444858;
 }
 
 .performance .section {
-  margin-bottom: 3px;
+  margin-bottom: 23px;
   font-size: 1.075em;
-  color: #30323a;
-  
+  color: #30323a;  
 }
 
 .performance strong {
-  color: #444858;
+  color: #787c8b;
 }
 
 .performance strong.date {
