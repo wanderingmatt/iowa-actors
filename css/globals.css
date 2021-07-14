@@ -1,4 +1,4 @@
-/* 
+/*
 FILENAME: globals.css
 DESCRIPTION: This stylesheet serves global declarations to all University of Iowa assets
 AUTHOR: Matthew Anderson -> matthew.anderson.design@gmail.com
@@ -30,7 +30,7 @@ a:link, a:visited {
 	text-decoration: none;
 	color: #fae443;
 }
-	
+
 a:hover, a:active {
   background-color: #fae443;
   color: #555a6e;
@@ -79,13 +79,13 @@ li.alpha {
   top: 20px;
   left: 355px;
   display: block;
-  background: transparent url("../images/logo-rev.png") no-repeat; 
+  background: transparent url("../images/logo-rev.png") no-repeat;
   width: 250px;
   height: 40px;
 }
 
 #logo a:hover {
-  background-image: url("../images/logo-hover.png"); 
+  background-image: url("../images/logo-hover.png");
 }
 
 #logo img {
@@ -205,7 +205,7 @@ hr {
 .performance .section {
   margin-bottom: 23px;
   font-size: 1.075em;
-  color: #30323a;  
+  color: #30323a;
 }
 
 .performance strong {
@@ -223,7 +223,7 @@ hr {
 #actors ul li {
   float: left;
   display: inline;
-  width: 235px;  
+  width: 235px;
 }
 
 #actors ul li a {
@@ -314,6 +314,7 @@ hr {
 #actors ul li#download a:hover {
   background: #555a6e url("../images/icons/download.png") 50% 140px no-repeat;
   color: #fff;
+  cursor: not-allowed;
 }
 
 /* =ACTORS */
@@ -455,4 +456,5 @@ button.resume, .buttons a.resume {
   background: #fae443;
   border: 2px solid #fae443;
   color: #565b6e;
+  cursor: not-allowed;
 }
