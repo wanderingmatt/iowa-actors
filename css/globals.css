@@ -456,4 +456,5 @@ button.resume, .buttons a.resume {
   background: #fae443;
   border: 2px solid #fae443;
   color: #565b6e;
+  cursor: not-allowed;
 }
